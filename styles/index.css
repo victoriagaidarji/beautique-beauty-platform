@@ -1,0 +1,34 @@
+@import "normalize.css";
+@import "../fonts/fonts.css";
+@import "variables.css";
+@import "globals.css";
+
+@import "blocks/header.css";
+@import "blocks/logo.css";
+@import "blocks/burger.css";
+@import "blocks/hero.css";
+@import "blocks/side-image.css";
+@import "blocks/button.css";
+@import "blocks/separator.css";
+@import "blocks/intro.css";
+@import "blocks/popular.css";
+@import "blocks/staff.css";
+@import "blocks/benefits.css";
+@import "blocks/contact.css";
+@import "blocks/form.css";
+@import "blocks/service.css";
+@import "blocks/book-button.css";
+@import "blocks/masters.css";
+@import "blocks/master-card.css";
+@import "blocks/mini-section.css";
+@import "blocks/grid.css";
+@import "blocks/team.css";
+@import "blocks/contacts.css";
+@import "blocks/socials.css";
+@import "blocks/modal.css";
+@import "blocks/footer.css";
+
+
+
+
+

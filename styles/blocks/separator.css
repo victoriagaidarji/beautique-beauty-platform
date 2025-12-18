@@ -1,0 +1,13 @@
+.separator {
+  margin: 16px 0;
+  height: 210px;
+  border: none;
+  background: url("../../images/bow.png") center / cover no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .separator {
+    margin: 4px 0;
+  }
+}
+

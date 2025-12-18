@@ -1,0 +1,45 @@
+.benefits {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.benefits__title {
+  margin-bottom: 16px;
+}
+
+.benefits__subtitle {
+  text-transform: uppercase;
+}
+
+.benefits__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.benefits__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.benefits__item-number {
+}
+
+.benefits__item-description {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .benefits__list {
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 32px;
+  }
+}

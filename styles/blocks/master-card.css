@@ -1,0 +1,50 @@
+.master-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  border: var(--border);
+}
+
+.master-card__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.master-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.master-card__name {
+  padding-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .master-card__image {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .master-card__content {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .master-card {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .master-card__content {
+    padding-inline: 16px;
+  }
+
+  .master-card__name {
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+.masters {
+  padding-top: 96px;
+  display: grid;
+  gap: 16px;
+}
+
+.masters__list {
+  display: grid;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .masters__list {
+    gap: 16px;
+  }
+}

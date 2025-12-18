@@ -1,0 +1,25 @@
+.grid__list {
+  padding-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.grid__item {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  text-align: center;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.grid__item-title {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .grid__list {
+    grid-template-columns: 1fr;
+  }
+}

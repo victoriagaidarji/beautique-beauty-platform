@@ -1,0 +1,9 @@
+.side-image {
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .side-image {
+    max-width: 340px;
+  }
+}

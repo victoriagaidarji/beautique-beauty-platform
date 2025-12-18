@@ -1,0 +1,5 @@
+.mini-section {
+  padding-top: 64px;
+  display: grid;
+  gap: 40px;
+}

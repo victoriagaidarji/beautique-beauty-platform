@@ -1,0 +1,17 @@
+.footer {
+  padding-block: 24px 32px;
+  display: grid;
+  gap: 12px;
+  text-align: center;
+  color: var(--coloro-brown);
+}
+
+.footer__author {
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-block: 16px 24px;
+  }
+}

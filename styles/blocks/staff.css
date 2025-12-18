@@ -1,0 +1,35 @@
+.staff {
+  display: grid;
+  gap: 24px;
+  text-align: center;
+}
+
+.staff__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.staff__item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.staff__item-name {
+  font-family: var(--font-family-secondary);
+}
+
+.staff__button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .staff__list {
+    gap: 0px;
+  }
+}

@@ -1,0 +1,27 @@
+.intro {
+  display: grid;
+  gap: 16px;
+}
+
+.intro__title {
+  margin-bottom: 60px;
+}
+
+.intro__info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.intro__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .intro__info {
+    grid-template-columns: 1fr;
+  }
+}

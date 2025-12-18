@@ -1,0 +1,19 @@
+.contacts__list {
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+}
+
+.contact__item {
+  display: flex;
+  gap: 8px;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: var(--coloro-brown-light);
+    }
+  }
+}

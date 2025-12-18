@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.modal__content {
+  position: relative;
+  max-width: 800px;
+  max-height: calc(100vh - 16px);
+  margin: 16px auto;
+  padding: 0 16px 8px;
+  background: var(--coloro-gray);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  overflow-y: auto;
+}
+
+.modal__close {
+  position: sticky;
+  top: 12px;
+  right: 12px;
+  float: right;
+  background: none;
+  border: 0;
+  font-size: 36px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modal__title {
+  text-align: center;
+  clear: both;
+}
+
+.modal__button {
+  width: 100%;
+}
+
+#extrasList {
+  display: grid;
+  gap: 4px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: var(--coloro-brown-light);
+}

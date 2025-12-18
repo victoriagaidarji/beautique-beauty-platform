@@ -1,0 +1,35 @@
+.button {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--coloro-black);
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--coloro-black);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 141%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 88px;
+  transition-duration: var(--transition-duration);
+
+  &:hover {
+    color: var(--coloro-brown-light);
+    background-color: var(--coloro-brown);
+    border-color: var(--coloro-brown-light);
+  }
+}
+
+@media (max-width: 1024px) {
+  .button {
+    font-size: 24px;
+    padding-inline: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 20px;
+    padding-inline: 12px;
+  }
+}

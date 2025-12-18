@@ -1,0 +1,26 @@
+.service {
+  display: grid;
+  gap: 16px;
+}
+
+.service__title {
+  margin-block: 32px;
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+.service__price {
+  font-family: var(--font-family-secondary);
+  font-size: 1.5em;
+  white-space: nowrap;
+}

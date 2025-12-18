@@ -1,0 +1,14 @@
+.team__wrapper {
+  padding-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .team__wrapper {
+    grid-template-columns:1fr;
+  }
+}

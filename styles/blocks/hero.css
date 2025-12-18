@@ -1,0 +1,37 @@
+.hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero__header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  order: 1;
+}
+
+.hero__title {
+  text-align: left;
+}
+
+.hero__subtitle {
+  text-align: right;
+}
+
+.hero__description {
+  font-size: inherit;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__description {
+    text-align: center;
+  }
+}
