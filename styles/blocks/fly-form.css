@@ -1,0 +1,11 @@
+.fly-form {
+  padding-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .fly-form {
+    &::before {
+      width: 0;
+    }
+  }
+}

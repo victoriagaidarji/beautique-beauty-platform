@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 32px;
+  font-family: var(--font-family);
 }
 
 .main {

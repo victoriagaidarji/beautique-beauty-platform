@@ -7,7 +7,7 @@
 }
 
 .footer__author {
-  text-transform: capitalize;
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {

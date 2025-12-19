@@ -22,6 +22,10 @@
   padding-top: 24px;
 }
 
+.master-card__profession {
+  font-family: var(--font-family);
+}
+
 @media (max-width: 1024px) {
   .master-card__image {
     width: 300px;
