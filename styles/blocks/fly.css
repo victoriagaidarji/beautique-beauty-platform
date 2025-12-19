@@ -132,7 +132,7 @@
 
   &::after {
     right: 0;
-    bottom: -10%;
+    bottom: -5%;
     width: 140px;
     rotate: -45deg;
   }
