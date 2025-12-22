@@ -43,6 +43,8 @@
 .modal__title {
   text-align: center;
   clear: both;
+  font-family: var(--font-family-secondary);
+  font-size: 60px;
 }
 
 .modal__button {
