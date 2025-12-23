@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    content="width=device-width, initial-scale=1.0"
   >
   <meta
     http-equiv="X-UA-Compatible"
@@ -62,9 +62,9 @@
     <ul class="contacts__list">
       <li class="contact__item">
         <p class="h3 contact__info-title">Адрес:</p>
-        <p class="contact__item-info">
-          <address>г. Тирасполь, улица 25 Октября, 11</address>
-        </p>
+        <address class="contact__item-info">
+        г. Тирасполь, улица 25 Октября, 11
+        </address>
       </li>
       <li class="contact__item">
         <p class="h3 contact__info-title">Телефон:</p>
@@ -83,7 +83,7 @@
       <li class="contact__item">
         <p class="h3 contact__info-title">График работы:</p>
         <p class="contact__item-info">
-          <time datetime="Mo-Sa 10:00-19:00">
+          <time datetime="10:00">
             Пн–Сб: 10:00 — 19:00
           </time>
         </p>
@@ -233,14 +233,18 @@
       </label>
 
       <label class="form__field">
-        <span class="form__label">Услуга</span>
-        <select class="form__select" id="serviceSelect" required></select>
-      </label>
+          <span class="form__label">Услуга</span>
+          <select class="form__select" id="serviceSelect" required>
+            <option value="" disabled selected>Выберите услугу</option>
+          </select>
+        </label>
 
-      <label class="form__field">
-        <span class="form__label">Мастер</span>
-        <select class="form__select" id="masterSelect" required></select>
-      </label>
+        <label class="form__field">
+          <span class="form__label">Мастер</span>
+          <select class="form__select" id="masterSelect" required disabled>
+            <option value="" selected hidden>Выберите мастера</option>
+          </select>
+        </label>
 
       <label class="form__field">
         <span class="form__label">Дата</span>

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    content="width=device-width, initial-scale=1.0"
   >
   <meta
     http-equiv="X-UA-Compatible"
@@ -148,19 +148,18 @@
       </label>
 
       <label class="form__field">
-        <span class="form__label">Услуга</span>
-        <select class="form__select" id="serviceSelect" required></select>
-      </label>
+          <span class="form__label">Услуга</span>
+          <select class="form__select" id="serviceSelect" required>
+            <option value="" disabled selected>Выберите услугу</option>
+          </select>
+        </label>
 
-      <label class="form__field">
-        <span class="form__label">Мастер</span>
-        <select class="form__select" id="masterSelect" required></select>
-      </label>
-
-      <label class="form__field">
-        <span class="form__label">Дата</span>
-        <input type="date" id="dateInput" class="form__input" required>
-      </label>
+        <label class="form__field">
+          <span class="form__label">Мастер</span>
+          <select class="form__select" id="masterSelect" required disabled>
+            <option value="" selected hidden>Выберите мастера</option>
+          </select>
+        </label>
 
       <label class="form__field">
         <span class="form__label">Время</span>

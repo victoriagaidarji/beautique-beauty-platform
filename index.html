@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    content="width=device-width, initial-scale=1.0"
   >
   <meta
     http-equiv="X-UA-Compatible"
@@ -327,13 +327,13 @@
       <address class="contact__info">
         <ul class="contact__info-list">
           <li class="contact__info-item">
-            <h3 class="contact__info-title">Адрес</h3>
+            <p class="contact__info-title">Адрес</p>
             <p class="contact__info-text">
               г. Тирасполь, ул. 25 октября, 11
             </p>
           </li>
           <li class="contact__info-item">
-            <h3 class="contact__info-title">Телефон и e-mail</h3>
+            <p class="contact__info-title">Телефон и e-mail</p>
             <p class="contact__info-text">
               <a href="tel:+37377845252">+ 373 778 45 252</a>
             </p>
@@ -344,15 +344,15 @@
             </p>
           </li>
           <li class="contact__info-item">
-            <h3 class="contact__info-title">Время работы</h3>
+            <p class="contact__info-title">Время работы</p>
             <p class="contact__info-text">
-              <time datetime="Mo-Sa 10:00-19:00">
+              <time datetime="10:00">
                 Пн–Сб: 10:00 – 19:00
               </time>
             </p>
           </li>
           <li class="contact__info-item">
-            <h3 class="contact__info-title">Социальные сети</h3>
+            <p class="contact__info-title">Социальные сети</p>
             <div class="contact__socials">
               <a class="contact__social" href="https://www.instagram.com/">
                 <img src="./images/icons/inst.png" alt="Instagram" width="58" height="58">
@@ -429,12 +429,16 @@
 
         <label class="form__field">
           <span class="form__label">Услуга</span>
-          <select class="form__select" id="serviceSelect" required></select>
+          <select class="form__select" id="serviceSelect" required>
+            <option value="" disabled selected>Выберите услугу</option>
+          </select>
         </label>
 
         <label class="form__field">
           <span class="form__label">Мастер</span>
-          <select class="form__select" id="masterSelect" required></select>
+          <select class="form__select" id="masterSelect" required disabled>
+            <option value="" selected hidden>Выберите мастера</option>
+          </select>
         </label>
 
         <label class="form__field">

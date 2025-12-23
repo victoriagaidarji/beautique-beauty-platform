@@ -15,6 +15,13 @@
   gap: 32px;
 }
 
+.contact__info-title {
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 94%;
+}
+
 .contact__info-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -77,6 +84,10 @@
   .contact__social-image {
     width: 40px;
   }
+
+  .contact__info-title {
+  font-size: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -91,5 +102,9 @@
 
   .contact__form-title {
     margin-top: 32px;
+  }
+
+  .contact__info-title {
+  font-size: 24px;
   }
 }

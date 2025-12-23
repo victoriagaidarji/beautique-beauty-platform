@@ -89,9 +89,10 @@ servicesData.forEach(category => {
    МАСТЕРА ПО УСЛУГЕ
 ====================== */
 function renderMastersForService(categoryName) {
-  masterSelect.innerHTML = `
-    <option value="" disabled selected>Выберите мастера</option>
-  `;
+  masterSelect.disabled = false; // включаем select
+
+  // Сначала очищаем, добавляем плейсхолдер
+  masterSelect.innerHTML = `<option value="" selected hidden>Выберите мастера</option>`;
 
   mastersData.forEach(master => {
     if (master.categories.includes(categoryName)) {
@@ -104,6 +105,7 @@ function renderMastersForService(categoryName) {
 
   calculateTotal();
 }
+
 
 /* === Выбор услуги === */
 serviceSelect.addEventListener("change", () => {
